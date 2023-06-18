@@ -1,0 +1,18 @@
+[package]
+name = "llamaex"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "llamaex"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.28.0"
+#serde_rustler = "0.0.3"
+#llm = "0.1"
+
+#[profile.dev.package.ggml-sys]
+#opt-level = 3
