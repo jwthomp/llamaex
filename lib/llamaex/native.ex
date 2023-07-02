@@ -1,3 +1,5 @@
+
+
 defmodule Llamaex.Native do
   @moduledoc false
 
@@ -10,8 +12,6 @@ defmodule Llamaex.Native do
   def llama_init_from_file(_filename), do: error()
   def llama_tokenize(_ctx, _prompt), do: error()
   def llama_free(_ctx), do: error()
-
-
 
   defp error, do: :erlang.nif_error(:nif_not_loaded)
 
