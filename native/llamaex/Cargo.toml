@@ -14,5 +14,9 @@ rustler = "0.28.0"
 llm = "0.1.1"
 rand = "0.8.5"
 
-#[profile.dev.package.ggml-sys]
-#opt-level = 3
+[profile.dev.package.ggml-sys]
+opt-level = 3
+
+[profile.release-debug]
+inherits = "release"
+debug=true
